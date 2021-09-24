@@ -1,7 +1,7 @@
 # Nami-Mall
 The back end part of a clone mall of xiaomi online mall
 
-<img width="1552" alt="1632458468(1)" src="https://user-images.githubusercontent.com/61750044/134619294-6df10cae-ff85-4678-ab99-0f46c59a99ff.png">
+<img width="1526" alt="1632458509(1)" src="https://user-images.githubusercontent.com/61750044/134619342-fabde536-dedb-4f03-962d-856ae42b5b7b.png">
 
 # DOC
 
