@@ -1,4 +1,4 @@
-#### 1.登录
+#### 1.Log in
 
 **POST /user/login**
 
@@ -18,7 +18,7 @@ fail
 ```
 {
     "status": 1,
-    "msg": "密码错误"
+    "msg": "wrong password"
 }
 ```
 
@@ -41,7 +41,7 @@ success
 
 -------
 
-#### 2.注册
+#### 2.Register
 **POST /user/register**
 
 > request
@@ -61,7 +61,7 @@ success
 ```
 {
     "status": 0,
-    "msg": "校验成功"
+    "msg": "register success"
 }
 ```
 
@@ -70,18 +70,18 @@ fail
 ```
 {
     "status": 2,
-    "msg": "用户已存在"
+    "msg": "user(email or username) existed"
 }
 ```
 
 
-#### 3.获取登录用户信息
+#### 3.Get user information
 **GET /user**
 
 > request
 
 ```
-无参数
+No parameter
 ```
 > response
 
@@ -105,7 +105,7 @@ fail
 ```
 {
     "status": 10,
-    "msg": "用户未登录,无法获取当前用户信息"
+    "msg": "please login before requiring user information"
 }
 
 ```
@@ -113,13 +113,13 @@ fail
 ------
 
 
-#### 4.退出登录
+#### 4.Log out
 **POST /user/logout
 
 > request
 
 ```
-无
+No parameter
 ```
 
 > response
@@ -129,7 +129,7 @@ success
 ```
 {
     "status": 0,
-    "msg": "退出成功"
+    "msg": "log out success"
 }
 ```
 
@@ -137,6 +137,6 @@ fail
 ```
 {
     "status": -1,
-    "msg": "服务端异常"
+    "msg": "server error"
 }
 ```
