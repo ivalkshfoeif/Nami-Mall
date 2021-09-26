@@ -1,17 +1,17 @@
 - [Nami-Mall](#nami-mall)
 - [API document](#api-document)
-  * [Order](#-order--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-ordermd-)
+  * [Order](#order)
       - [1.Create an order](#1create-an-order)
       - [2.List all orders](#2list-all-orders)
       - [3.Order detail](#3order-detail)
       - [4.Cancel orders](#4cancel-orders)
-  * [Category](#-category--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-categorymd-)
+  * [Category](#category)
       - [1.All categories](#1all-categories)
-  * [ShippingAddress](#-shippingaddress--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-shippingaddressmd-)
+  * [ShippingAddress](#shippingaddress)
       - [1.Add new address](#1add-new-address)
       - [2.Delete address](#2delete-address)
       - [3.Update the address](#3update-the-address)
-  * [ShoppingCart](#-shoppingcart--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-shoppingcartmd-)
+  * [ShoppingCart](#shoppingcart)
       - [1.Shopping cart list](#1shopping-cart-list)
       - [2.Add new items](#2add-new-items)
       - [3.Update shopping cart](#3update-shopping-cart)
@@ -19,13 +19,12 @@
       - [5.Select all items](#5select-all-items)
       - [6.Unselect all](#6unselect-all)
       - [7.Calculate the total quantity of items selected](#7calculate-the-total-quantity-of-items-selected)
-  * [User](#-user--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-usermd-)
+  * [User](#user)
       - [1.Log in](#1log-in)
       - [2.Register](#2register)
       - [3.Get user information](#3get-user-information)
       - [4.Log out](#4log-out)
 - [Version](#version)
-
 
 # Nami-Mall
 A project that clones Xiaomi Mall back end. The system can handle front-end requests to create users, log in, creat ,read, update and delete shopping cart, place orders and make real payment by AliPay and WeChatPay.
@@ -1091,5 +1090,6 @@ fail
 
 # Version
 Java 1.8
+
 MySQL 5.7
 
