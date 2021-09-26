@@ -5,7 +5,7 @@ A project that clones Xiaomi Mall back end. The system can handle front-end requ
 
 # API DOC
 ## [Order](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/Order.md)
-#### 1.create an order
+#### 1.Create an order
 
 ** POST /orders
 
@@ -74,7 +74,7 @@ fail
 
 ------
 
-#### 2.list all orders
+#### 2.List all orders
 
 ** GET /orders
 
@@ -406,7 +406,7 @@ success
 ```
 
 ## [ShippingAddress](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/ShippingAddress.md)
-#### 1.add new address
+#### 1.Add new address
 
 ** POST /shippings
 
@@ -450,7 +450,7 @@ fail
 ------
 
 
-#### 2.delete address
+#### 2.Delete address
 
 **DELETE /shippings/{shippingId}
 
@@ -485,7 +485,7 @@ fail
 ------
 
 
-#### 3.update the address
+#### 3.Update the address
 
 **PUT /shippings/{shippingId}
 
