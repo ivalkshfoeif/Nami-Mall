@@ -11,7 +11,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class MallApplicationTests {
 
     @Test
-    public void load(){
+    public void load(){ 
+        
+        
 
     }
 
