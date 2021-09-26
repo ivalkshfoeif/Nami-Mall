@@ -78,7 +78,7 @@ pageSize(default=10)
 pageNum(default=1)
 ```
 
-order status:0-cancelled-10-unpaid，20-paid，40-shipped，50-交易成功，60-交易关闭
+order status:0-cancelled-10-unpaid，20-paid，40-shipped，50-success，60-close
 
 > response
 
@@ -101,10 +101,10 @@ success
         "orderNo": 1291136461000,
         "payment": 2999.11,
         "paymentType": 1,
-        "paymentTypeDesc": "在线支付",
+        "paymentTypeDesc": "ONLINE_PAY",
         "postage": 0,
         "status": 10,
-        "statusDesc": "未支付",
+        "statusDesc": "UMPAID",
         "paymentTime": "2010-02-11 12:27:18",
         "sendTime": "2010-02-11 12:27:18",
         "endTime": "2010-02-11 12:27:18",
@@ -123,17 +123,17 @@ success
           }
         ],
         "shippingId": 5,
-        "receiverName": "廖师兄",
+        "receiverName": "XXX",
         "shippingVo": null
       },
       {
         "orderNo": 1291136461001,
         "payment": 2999.11,
         "paymentType": 1,
-        "paymentTypeDesc": "在线支付",
+        "paymentTypeDesc": "ONELINE_PAY",
         "postage": 0,
         "status": 10,
-        "statusDesc": "未支付",
+        "statusDesc": "XXX",
         "paymentTime": "2010-02-11 12:27:18",
         "sendTime": "2010-02-11 12:27:18",
         "endTime": "2010-02-11 12:27:18",
@@ -152,17 +152,17 @@ success
           }
         ],
         "shippingId": 5,
-        "receiverName": "廖师兄",
+        "receiverName": "XXX",
         "shippingVo": null
       },
       {
         "orderNo": 1291136461002,
         "payment": 2999.11,
         "paymentType": 1,
-        "paymentTypeDesc": "在线支付",
+        "paymentTypeDesc": "ONLINE_PAY",
         "postage": 0,
         "status": 10,
-        "statusDesc": "未支付",
+        "statusDesc": "XXX",
         "paymentTime": "2010-02-11 12:27:18",
         "sendTime": "2010-02-11 12:27:18",
         "endTime": "2010-02-11 12:27:18",
@@ -181,7 +181,7 @@ success
           }
         ],
         "shippingId": 5,
-        "receiverName": "廖师兄",
+        "receiverName": "XXX",
         "shippingVo": null
       }
     ],
@@ -210,15 +210,15 @@ fail
 ```
 {
   "status": 10,
-  "msg": "用户未登录,请登录"
+  "msg": "please login first"
 }
 
 
-或
+or
 
 {
   "status": 1,
-  "msg": "没有权限"
+  "msg": "You are not authorized to do this action"
 }
 
 
@@ -227,7 +227,7 @@ fail
 
 ------
 
-#### 3.订单详情
+#### 3.Order detail
 
 ** GET /orders/{orderNo}
 
@@ -248,10 +248,10 @@ success
     "orderNo": 1291136461000,
     "payment": 30000.00,
     "paymentType": 1,
-    "paymentTypeDesc": "在线支付",
+    "paymentTypeDesc": "ONLINE_PAY",
     "postage": 0,
     "status": 10,
-    "statusDesc": "未支付",
+    "statusDesc": "UNPAID",
     "paymentTime": "",
     "sendTime": "",
     "endTime": "",
@@ -280,15 +280,15 @@ success
       }
     ],
     "shippingId": 3,
-    "receiverName": "廖师兄",
+    "receiverName": "XXX",
     "shippingVo": {
-      "receiverName": "廖师兄",
+      "receiverName": "XXX",
       "receiverPhone": "0100",
       "receiverMobile": "186",
-      "receiverProvince": "北京",
-      "receiverCity": "北京",
-      "receiverDistrict": "昌平区",
-      "receiverAddress": "慕课网",
+      "receiverProvince": "MA",
+      "receiverCity": "Boston",
+      "receiverDistrict": "XXX",
+      "receiverAddress": "XXX",
       "receiverZip": "100000"
     }
   }
@@ -300,13 +300,13 @@ fail
 ```
 {
   "status": 1,
-  "msg": "没有找到订单"
+  "msg": "order not found"
 }
 ```
 
 ------
 
-#### 4.取消订单
+#### 4.Cancel orders
 
 ** PUT /orders/{orderNo}
 
@@ -331,13 +331,13 @@ fail
 ```
 {
   "status": 1,
-  "msg": "该用户没有此订单"
+  "msg": "The user do not have the order"
 }
 
-或
+or
 {
   "status": 1,
-  "msg": "此订单已付款，无法被取消"
+  "msg": "The order is paid already, refund is not supported"
 }
 ```
 
