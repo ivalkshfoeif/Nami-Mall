@@ -1,4 +1,4 @@
-#### 1.添加地址
+#### 1.add new address
 
 ** POST /shippings
 
@@ -6,13 +6,13 @@
 > request
 
 ```
-receiverName=廖师兄
+receiverName=XXX
 receiverPhone=010
 receiverMobile=18688888888
-receiverProvince=北京
-receiverCity=北京市
-receiverDistrict=海淀区
-receiverAddress=中关村
+receiverProvince=MA
+receiverCity=Boston
+receiverDistrict=XXXXX St
+receiverAddress=xxxxx St
 receiverZip=100000
 ```
 
@@ -23,7 +23,7 @@ success
 ```
 {
     "status": 0,
-    "msg": "新建地址成功",
+    "msg": " creating new address success",
     "data": {
         "shippingId": 28
     }
@@ -34,7 +34,7 @@ fail
 ```
 {
     "status": 1,
-    "msg": "新建地址失败"
+    "msg": "fail to create new address"
 }
 ```
 
@@ -42,7 +42,7 @@ fail
 ------
 
 
-#### 2.删除地址
+#### 2.delete address
 
 **DELETE /shippings/{shippingId}
 
@@ -61,7 +61,7 @@ success
 ```
 {
     "status": 0,
-    "msg": "删除地址成功"
+    "msg": "delete the address success"
 }
 ```
 
@@ -69,7 +69,7 @@ fail
 ```
 {
     "status": 1,
-    "msg": "删除地址失败"
+    "msg": "fail to delete the address"
 }
 ```
 
@@ -77,20 +77,20 @@ fail
 ------
 
 
-#### 3.更新地址
+#### 3.update the address
 
 **PUT /shippings/{shippingId}
 
 > request
 
 ```
-receiverName=廖师兄
+receiverName=XXX
 receiverPhone=010
 receiverMobile=18688888888
-receiverProvince=北京
-receiverCity=北京市
-receiverDistrict=海淀区
-receiverAddress=中关村
+receiverProvince=MA
+receiverCity=Boston
+receiverDistrict=XXXXX St
+receiverAddress=xxxxx St
 receiverZip=100000
 ```
 
@@ -101,7 +101,7 @@ success
 ```
 {
     "status": 0,
-    "msg": "更新地址成功"
+    "msg": "update the address success"
 }
 ```
 
@@ -109,7 +109,7 @@ fail
 ```
 {
     "status": 1,
-    "msg": "更新地址失败"
+    "msg": "fail to update the address"
 }
 ```
 
@@ -117,14 +117,14 @@ fail
 ------
 
 
-####4.地址列表
+####4.list all addresses
 
 **GET /shippings**
 
 > request
 
 ```
-pageNum(默认1),pageSize(默认10)
+pageNum(default 1),pageSize(default 10)
 ```
 
 > response
@@ -147,13 +147,13 @@ success
             {
                 "id": 4,
                 "userId": 13,
-                "receiverName": "廖师兄",
-                "receiverPhone": "010",
-                "receiverMobile": "18688888888",
-                "receiverProvince": "北京",
-                "receiverCity": "北京市",
-                "receiverDistrict": "海淀区",
-                "receiverAddress": "中关村",
+                "receiverName": XXX,
+                "receiverPhone": 010,
+                "receiverMobile": 18688888888,
+                "receiverProvince": "MA",
+                "receiverCity": "Boston",
+                "receiverDistrict":"XXXXX St",
+                "receiverAddress:: "xxxxx St",
                 "receiverZip": "100000",
                 "createTime": 1485066385000,
                 "updateTime": 1485066385000
@@ -161,13 +161,13 @@ success
             {
                 "id": 5,
                 "userId": 13,
-                "receiverName": "廖师兄",
-                "receiverPhone": "010",
-                "receiverMobile": "18688888888",
-                "receiverProvince": "北京",
-                "receiverCity": "北京市",
-                "receiverDistrict": "海淀区",
-                "receiverAddress": "中关村",
+                "receiverName": XXX,
+                "receiverPhone": 010,
+                "receiverMobile": 18688888888,
+                "receiverProvince": "MA",
+                "receiverCity": "Boston",
+                "receiverDistrict":"XXXXX St",
+                "receiverAddress:: "xxxxx St",
                 "receiverZip": "100000",
                 "createTime": 1485066392000,
                 "updateTime": 1485075875000
@@ -193,6 +193,6 @@ fail
 ```
 {
     "status": 1,
-    "msg": "请登录之后查询"
+    "msg": "please login first"
 }
 ```
