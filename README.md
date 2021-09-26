@@ -1,25 +1,25 @@
 - [Nami-Mall](#nami-mall)
 - [API document](#api-document)
-  * [[Order](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/Order.md)](#-order--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-ordermd-)
+  * [[Order](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/Order.md)]
       - [1.Create an order](#1create-an-order)
       - [2.List all orders](#2list-all-orders)
       - [3.Order detail](#3order-detail)
       - [4.Cancel orders](#4cancel-orders)
-  * [[Category](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/Category.md)](#-category--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-categorymd-)
+  * [[Category](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/Category.md)]
       - [1.All categories](#1all-categories)
-  * [[ShippingAddress](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/ShippingAddress.md)](#-shippingaddress--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-shippingaddressmd-)
+  * [[ShippingAddress](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/ShippingAddress.md)]
       - [1.Add new address](#1add-new-address)
       - [2.Delete address](#2delete-address)
       - [3.Update the address](#3update-the-address)
-  * [[ShoppingCart](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/ShoppingCart.md)](#-shoppingcart--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-shoppingcartmd-)
+  * [[ShoppingCart](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/ShoppingCart.md)]
       - [1.Shopping cart list](#1shopping-cart-list)
       - [2.Add new items](#2add-new-items)
       - [3.Update shopping cart](#3update-shopping-cart)
-      - [4.Remove certain item from shopping cart](#4remove-certain-item-from-shopping-cart)
+      - [4.Remove certain item from shopping cart]
       - [5.Select all items](#5select-all-items)
       - [6.Unselect all](#6unselect-all)
       - [7.Calculate the total quantity of items selected](#7calculate-the-total-quantity-of-items-selected)
-  * [[User](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/User.md)](#-user--https---githubcom-ivalkshfoeif-nami-mall-blob-main-doc-usermd-)
+  * [[User](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/User.md)]
       - [1.Log in](#1log-in)
       - [2.Register](#2register)
       - [3.Get user information](#3get-user-information)
