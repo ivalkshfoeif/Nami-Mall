@@ -1,11 +1,11 @@
-#### 1.购物车List列表
+#### 1.Shopping cart list
 
 ** GET /carts
 
 > request
 
 ```
-无参数,需要登录状态
+No parameter, login required
 ```
 
 > response
@@ -22,7 +22,7 @@ success
                 "productId": 1,
                 "quantity": 1,
                 "productName": "iphone7",
-                "productSubtitle": "双十一促销",
+                "productSubtitle": "Black Fridy promotion",
                 "productMainImage": "mainimage.jpg",
                 "productPrice": 7199.22,
                 "productStatus": 1,
@@ -34,7 +34,7 @@ success
                 "productId": 2,
                 "quantity": 1,
                 "productName": "oppo R8",
-                "productSubtitle": "oppo促销进行中",
+                "productSubtitle": "promotion ongoing",
                 "productMainImage": "mainimage.jpg",
                 "productPrice": 2999.11,
                 "productStatus": 1,
@@ -55,7 +55,7 @@ fail
 ```
 {
     "status": 10,
-    "msg": "用户未登录,请登录"
+    "msg": "please login first"
 }
 ```
 
@@ -63,7 +63,7 @@ fail
 ------
 
 
-#### 2.购物车添加商品
+#### 2.Add new items
 
 ** POST /carts
 
@@ -74,7 +74,7 @@ productId
 selected: true
 ```
 
-`注意`数量不用传，添加商品永远是以1累加
+Each time this interface is called, the quantity will add up to one
 
 > response
 
@@ -89,7 +89,7 @@ success
                 "productId": 1,
                 "quantity": 12,
                 "productName": "iphone7",
-                "productSubtitle": "双十一促销",
+                "productSubtitle": "Black Friday promotion",
                 "productMainImage": "mainimage.jpg",
                 "productPrice": 7199.22,
                 "productStatus": 1,
@@ -101,7 +101,7 @@ success
                 "productId": 2,
                 "quantity": 1,
                 "productName": "oppo R8",
-                "productSubtitle": "oppo促销进行中",
+                "productSubtitle": "promotion ongoing",
                 "productMainImage": "mainimage.jpg",
                 "productPrice": 2999.11,
                 "productStatus": 1,
@@ -121,7 +121,7 @@ fail
 ```
 {
     "status": 10,
-    "msg": "用户未登录,请登录"
+    "msg": "please login first"
 }
 ```
 
@@ -132,20 +132,21 @@ fail
 
 
 
-#### 3.更新购物车
+#### 3.Update shopping cart
 
 ** PUT /carts/{productId}
 
 > request
 
 ```
-quantity //非必填
-selected: true //非必填
+quantity //not necessary
+selected: true //not necessary
 ```
 
 > response
 
-响应同2
+
+success
 
 success
 
@@ -158,7 +159,7 @@ success
                 "productId": 1,
                 "quantity": 12,
                 "productName": "iphone7",
-                "productSubtitle": "双十一促销",
+                "productSubtitle": "Black Friday promotion",
                 "productMainImage": "mainimage.jpg",
                 "productPrice": 7199.22,
                 "productStatus": 1,
@@ -170,13 +171,13 @@ success
                 "productId": 2,
                 "quantity": 1,
                 "productName": "oppo R8",
-                "productSubtitle": "oppo促销进行中",
+                "productSubtitle": "promotion ongoing",
                 "productMainImage": "mainimage.jpg",
                 "productPrice": 2999.11,
                 "productStatus": 1,
                 "productTotalPrice": 2999.11,
                 "productStock": 86,
-                "productSelected": true,
+                "productSelected": true
             }
         ],
         "selectedAll": true,
@@ -190,7 +191,7 @@ fail
 ```
 {
     "status": 10,
-    "msg": "用户未登录,请登录"
+    "msg": "please login first"
 }
 ```
 
@@ -199,7 +200,7 @@ fail
 
 
 
-#### 4.移除购物车某个产品
+#### 4.Remove certain item from shopping cart
 
 ** DELETE /carts/{productId}
 
@@ -222,7 +223,7 @@ success
                 "productId": 2,
                 "quantity": 1,
                 "productName": "oppo R8",
-                "productSubtitle": "oppo促销进行中",
+                "productSubtitle": "promotion ongoing",
                 "productMainImage": "mainimage.jpg",
                 "productPrice": 2999.11,
                 "productStatus": 1,
@@ -242,57 +243,57 @@ fail
 ```
 {
     "status": 10,
-    "msg": "用户未登录,请登录"
+    "msg": "please login first"
 }
 ```
 
 
 ------
 
-#### 5.全选中
+#### 5.Select all items
 
 ** PUT /carts/selectAll
 
 > request
 
 ```
-无参数,需要登录状态
+login required
 ```
 
 > response
 
 success
 
-同接口 获取购物车列表
+same as 1.Shopping cart list
 
 ------
 
-#### 6.全不选中
+#### 6.Unselect all
 
 ** PUT /carts/unSelectAll
 
 > request
 
 ```
-无参数,需要登录状态
+login required
 ```
 
 > response
 
 success
 
-同接口 获取购物车列表
+same as 1.Shopping cart list
 
 ------
 
-#### 7.获取购物中所有商品数量总和
+#### 7.Calculate the total quantity of items selected
 
 ** GET /carts/products/sum
 
 > request
 
 ```
-无参数,需要登录状态
+login required
 ```
 
 > response
