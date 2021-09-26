@@ -4,6 +4,8 @@ A demo project that clones Xiaomi Mall back end. The system can handle front-end
 <img width="1526" alt="1632458509(1)" src="https://user-images.githubusercontent.com/61750044/134619342-fabde536-dedb-4f03-962d-856ae42b5b7b.png">
 
 # Version
+Java 1.8
+MySQL 5.7
 
 # API DOC
 ## [Order](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/Order.md)
