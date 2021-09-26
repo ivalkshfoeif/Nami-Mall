@@ -78,7 +78,7 @@ pageSize(default=10)
 pageNum(default=1)
 ```
 
-order status:0-cancelled-10-unpaid，20-paid，40-shipped，50-交易成功，60-交易关闭
+order status:0-cancelled-10-unpaid，20-paid，40-shipped，50-success，60-close
 
 > response
 
@@ -334,7 +334,7 @@ fail
   "msg": "The user do not have the order"
 }
 
-或
+or
 {
   "status": 1,
   "msg": "The order is paid already, refund is not supported"
