@@ -15,7 +15,7 @@
       - [1.Shopping cart list](#1shopping-cart-list)
       - [2.Add new items](#2add-new-items)
       - [3.Update shopping cart](#3update-shopping-cart)
-      - [4.Remove certain item from shopping cart]
+      - [4.Remove certain item from shopping cart](#4)
       - [5.Select all items](#5select-all-items)
       - [6.Unselect all](#6unselect-all)
       - [7.Calculate the total quantity of items selected](#7calculate-the-total-quantity-of-items-selected)
