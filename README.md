@@ -33,7 +33,7 @@ A project that clones Xiaomi Mall back end. The system can handle front-end requ
 <img width="1526" alt="1632458509(1)" src="https://user-images.githubusercontent.com/61750044/134619342-fabde536-dedb-4f03-962d-856ae42b5b7b.png">
 
 # API document
-## [Order](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/Order.md)
+## Order
 #### 1.Create an order
 
 ** POST /orders
@@ -379,7 +379,7 @@ or
 
 ------
 
-## [Category](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/Category.md)
+## Category
 #### 1.All categories
 
 **GET /categories**
@@ -434,7 +434,7 @@ success
 }
 ```
 
-## [ShippingAddress](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/ShippingAddress.md)
+## ShippingAddress
 #### 1.Add new address
 
 ** POST /shippings
@@ -635,7 +635,7 @@ fail
 ```
  
 
-## [ShoppingCart](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/ShoppingCart.md)
+## ShoppingCart
 #### 1.Shopping cart list
 
 ** GET /carts
@@ -944,7 +944,7 @@ login required
 ```
 
 
-## [User](https://github.com/ivalkshfoeif/Nami-Mall/blob/main/doc/User.md)
+## User
 #### 1.Log in
 
 **POST /user/login**
