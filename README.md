@@ -26,8 +26,6 @@
       - [4.Log out](#4log-out)
 - [Version](#version)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 # Nami-Mall
 A project that clones Xiaomi Mall back end. The system can handle front-end requests to create users, log in, creat ,read, update and delete shopping cart, place orders and make real payment by AliPay and WeChatPay.
 
